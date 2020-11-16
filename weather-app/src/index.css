@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: "montseratt", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.app {
+  background-image: url(./Assets/cold-bg.jpg);
+  background-size: cover;
+  background-position: bottom;
+  transition: all 0.4 ease;
+  max-width: 65vw;
+  margin-left: 120px;
+  margin-top: 15px;
+}
+h1{
+  text-align: center;
+  font-weight: 900;
+  font-size: 40px;
+  color: #fff;
+  transition: all 0.8s;
+  border-bottom: 4px solid #ec7532;
+  width: 0;
+  margin-left: 100px;
+}
+h1:hover{
+  color: #e68954;
+  transition: all 0.8s;
+  border-bottom: 4px solid #fff;
+  width: 260px;
+}
+.app.warm {
+  background-image: url(./Assets/warm-bg.jpg);
+  /* background-image: url(./Assets/a.jpg); */
+}
+main {
+  min-height: 90vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  padding: 15px;
+}
+.search-box {
+  width: 100%;
+  margin: 0 0 100px;
+}
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding-bottom: 17px;
+  padding-top: 17px;
+  font-size: 20px;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  /* margin-top: -25px; */
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  background-color: #e68954;
+  transition: all 0.5s;
+}
+.search-box .search-bar:focus {
+  background-color: #ec7532;
+  color: white;
+  transition: all 0.5s;
+}
+.location-box .location {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 5px 5px rgba(50, 50, 70, 0.5);
+}
+.location-box .date {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+.weather-box {
+  text-align: center;
+}
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  border-radius: 15px;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 15px 25px;
+  font-size: 100px;
+  color: #fff;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  box-shadow: 4px 8px rgba(0, 0, 0, 0.2);
+}
+.weather-box .weather {
+  color: #fff;
+  font-size: 80px;
+  font-weight: bold;
+  margin: 30px auto;
+}
